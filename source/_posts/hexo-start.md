@@ -162,14 +162,14 @@ local_search:
 ##### 阅读量统计
 
 ```bash
-# leancode配置 （Next config已存在）
+# leanCloud配置 （Next config已存在）
 leancloud_visitors:
   enable: true
   app_id: ssssssssssssssssssssssss
   app_key: sssssssssssssssssssssss
 ```
 
-&emsp;使用leancloud做统计，其实就是在触发事件的时候调用leancode的API，leancode记录下来，需要注册leancode，使用`app_id`和`app_key`做身份校验，5.1.3版本的Next配置中已经包含这一项，只需注册完后填写好就可以了。
+&emsp;使用leancloud做统计，Next的插件目录底下的`lean-analytics.swig`文件已经存在leanCloud的引入和统计代码，我们只需要注册leanCloud，使用`app_id`和`app_key`做身份校验，按如上填写好就可以了。
 
 ##### 字数统计和阅读时间估计
 
@@ -294,6 +294,33 @@ Sitemap: http://www.derekz.cn/baidusitemap.xml
 - picU 只支持七牛云，可以一键截图上传并复制好图片链接（比较好用，但是笔者的这个不知道为啥用得好好的某一天突然就验证不通过了）
 - [qiniu-image-tool](https://github.com/jiwenxing/qiniu-image-tool) 需要安装qshell（七牛云的一个命令行工具）以及 Alfred（非RMB玩家能接受破解版的话可以去[这里](http://xclient.info)下载哦）
 
-#### 歌单
+#### 域名指向
 
-TO BE CONTINUED!
+&emsp;推荐[阿里云](https://wanwang.aliyun.com/domain/)，顺便一提，阿里云的ECS最低配首年只要300块，有服务器需求的可以尝试。
+&emsp;注册好域名后需要添加域名解析，讲道理的话配置CNAME为www和@、记录值为XXX.github.io就可以的，但是实际操作上我在阿里云域名解析这里尝试配置第二条的时候一直报错，没办法，ping了下XXX.github.io拿到IP后加了一条记录类型为A、记录值为IP的记录，如下图所示：![域名解析](http://opo02jcsr.bkt.clouddn.com/2ca6bdd66256d44f70c4e6217c16f99f.jpg)
+
+&emsp;还需要做的一件事是在source目录底下创建一个CNAME文件，内容的话就填写你的域名，然后push到远端，重新部署。
+
+#### 保存文件
+
+&emsp;为了保留本地文件，参考前辈做法，在自己的这个repo上checkout一个新的分支derekzhou，将代码提交。以后每次更新文章时先push到derekzhou分支，然后执行hexo的命令去生成public文件deploy到master。这样就算本机坏了也没影响，源代码还是可以从git上clone下来。
+
+```bash
+# .gitignore
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+/.deploy_git
+/public
+# /_config.yml
+```
+
+
+
+
+
+&emsp;有任何疑问，欢迎[git](https://github.com/derekeeeeely/derekeeeeely.github.io/issues)、[weibo](http://weibo.com/u/3248682277)各种方式@我，博客的评论功能这两天会加上，因为好像现在梯子都被砍，第三方的一些评论服务也不好用了，有时间再看看吧。感谢各位看官老爷们~
