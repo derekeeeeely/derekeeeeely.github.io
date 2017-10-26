@@ -9,6 +9,7 @@ top: 100
 
 ![fate-cover](http://opo02jcsr.bkt.clouddn.com/43fc76fe12317b9b0cc2c1ec2a21cd87.jpeg)
 <!-- more -->
+本文首次发布在 [码农小呆的幻想乡](http://www.derekz.cn/posts/d76cea4a/)
 ## 前言
 
 &emsp;对于酷爱尝新的程序员们来说，博客可能是为数不多的仍被广泛使用的旧东西之一了。不论是为了技术积累，还是为了提高逼格，多数程序员心中都曾有过搭建博客站的想法。
