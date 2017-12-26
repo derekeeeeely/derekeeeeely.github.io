@@ -335,3 +335,22 @@ date: 2017-11-23 19:33:31
   greet(y); // OK
   ```
   只check Named类型(target type)，所以这个时候不会因为参数报错
+
+
+### node
+
+#### node project princeples
+
+- organize your files around features, not roles
+- don't put logic in `index.js` file
+- put your test files next to the implementation
+- use a `config` directory
+- put your long npm script in a `scripts` directory
+
+#### koa
+
+- assumption
+  - node: 8.8.1
+  - koa: 2.4.1
+
+-
