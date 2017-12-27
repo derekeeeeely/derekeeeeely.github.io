@@ -1,5 +1,5 @@
 ---
-title: ES6读书小笔记-1
+title: ES6小笔记-1
 tags:
   - es6
   - javaScript
@@ -10,10 +10,8 @@ abbrlink: 631da001
 date: 2017-10-31 02:17:11
 ---
 
-![](http://opo02jcsr.bkt.clouddn.com/79a64d61c2d6c28e0c0272ed0c1a5b1a.jpg)
+&emsp;&emsp;大佬们es7, es8写得嗨皮的时候，我却还在es6学习...本文为阅读阮一峰老师的系列文章记下的es6基础篇笔记
 <!-- more -->
-
-> 本文为阅读阮一峰老师的Es6入门一书时做的笔记积累，记录下来的多为个人觉得有必要注意的点，看官老爷们随意就好。
 
 ## lesson1 introduce
 

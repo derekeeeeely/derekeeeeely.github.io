@@ -1,5 +1,5 @@
 ---
-title: Code小笔记
+title: 日常code小笔记
 tags: [react, node, javaScript, typeScript]
 categories:
   - code
@@ -8,7 +8,7 @@ abbrlink: 917bede2
 date: 2017-11-23 19:33:31
 ---
 
-![](http://opo02jcsr.bkt.clouddn.com/d80db8259a7b22845d8b0612e5ed633f.jpg)
+&emsp;&emsp;渣渣小前端的日常学习笔记，可能会持续更新，可能过阵子看发现一堆问题就撕掉了
 <!-- more -->
 
 ## 渣渣前端学习笔记

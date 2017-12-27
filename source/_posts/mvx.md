@@ -12,13 +12,10 @@ abbrlink: 98f5a61f
 date: 2017-12-18 16:17:17
 ---
 
-![](http://opo02jcsr.bkt.clouddn.com/580bcb0f0386943719bd889d93bedd41.jpg)
+&emsp;&emsp;在git上看到一个[to do mvc](https://github.com/tastejs/todomvc)的repo，一时有了兴致，记录下一些点
 <!-- more -->
-本文首次发布在 [码农小呆的幻想乡](http://www.derekz.cn/posts/d76cea4a/)
 
-## todo mv* note
-
-### 前言
+### 历史
 
 #### 静态/展示->动态/交互
 

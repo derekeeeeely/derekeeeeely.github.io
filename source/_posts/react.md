@@ -10,11 +10,8 @@ abbrlink: 19656fd5
 date: 2017-12-26 13:22:43
 ---
 
-![](http://opo02jcsr.bkt.clouddn.com/4b1f23b123bc22c4a9b5a40ee416eb3c.jpg)
+&emsp;&emsp;这是一篇错漏百出，凌乱不堪的react源码学习笔记，推荐这个git库[read-react-source-code](https://github.com/numbbbbb/read-react-source-code/blob/master/02-how-render-works.md)，值得一看
 <!-- more -->
-
-
-## react源码学习笔记
 
 ### brief description
 

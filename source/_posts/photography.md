@@ -6,7 +6,7 @@ abbrlink: 44de16c4
 date: 2017-12-14 01:34:59
 ---
 
-![](http://opo02jcsr.bkt.clouddn.com/c74c365691690ecf9e9ed5085c940e06.jpg)
+&emsp;&emsp;我能想到最浪漫的事...之一，就是用镜头记录下你最美的瞬间
 <!-- more -->
 
 ## 小呆学摄影基础篇

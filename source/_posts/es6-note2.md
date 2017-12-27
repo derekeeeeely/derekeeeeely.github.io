@@ -1,5 +1,5 @@
 ---
-title: ES6读书小笔记-2
+title: ES6小笔记-2
 tags:
   - es6
   - javaScript
@@ -10,10 +10,8 @@ abbrlink: d82f038a
 date: 2017-11-06 14:12:52
 ---
 
-![](http://opo02jcsr.bkt.clouddn.com/43cc41b24f8857bdc266fd2ee04ebb01.jpg)
+&emsp;&emsp;承上一篇，本笔记包含es6的一些新东西，如Reflect，Proxy，Iterator，Symbol等
 <!-- more -->
-
-> 本文为阅读阮一峰老师的Es6入门一书时做的笔记积累，记录下来的多为个人觉得有必要注意的点，看官老爷们随意就好。
 
 ## lesson1 Symbol
 

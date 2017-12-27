@@ -1,5 +1,5 @@
 ---
-title: ES6读书小笔记-3
+title: ES6小笔记-3
 tags:
   - es6
   - javaScript
@@ -10,10 +10,8 @@ abbrlink: 93cdd49
 date: 2017-11-07 13:41:34
 ---
 
-![](http://opo02jcsr.bkt.clouddn.com/e95028e0591d74b0a2362f5bcf7f8ea6.jpg)
+&emsp;&emsp;承上一篇，本文记录了es6的Promise对象、Generator函数和async await语法糖，异步真是让人又爱又恨
 <!-- more -->
-
-> 本文为阅读阮一峰老师的Es6入门一书时做的笔记积累，记录下来的多为个人觉得有必要注意的点，看官老爷们随意就好。
 
 ## lesson1 Promise
 
