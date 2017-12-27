@@ -1,7 +1,7 @@
 ---
-title: photography
+title: 摄影小笔记
 tags: photography
-categories: [note, fun]
+categories: [life, note]
 abbrlink: 44de16c4
 date: 2017-12-14 01:34:59
 ---

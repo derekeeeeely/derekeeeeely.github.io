@@ -1,9 +1,11 @@
 ---
-title: ES6读书笔记-进阶篇之PG-A
+title: ES6读书小笔记-3
 tags:
   - es6
   - javaScript
-categories: note
+categories:
+  - code
+  - note
 abbrlink: 93cdd49
 date: 2017-11-07 13:41:34
 ---

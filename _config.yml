@@ -7,7 +7,7 @@ title: DZ's Gensokyo
 subtitle: Best Time, Best You and Me
 description: life are flashes and here is my life
 author: Derek Zhou
-language: zh-Hans
+language: zh-CN
 timezone:
 
 # URL
@@ -89,7 +89,7 @@ search:
   field: post
   format: html
   limit: 10000
-theme: next
+theme: Hacker
 html_minifier:
   enable: true
   ignore_error: false
@@ -128,3 +128,17 @@ deploy:
   type: git
   repository: git@github.com:derekeeeeely/derekeeeeely.github.io.git
   branch: master
+  name: derekeeeeely
+  email: derekely1@gmail.com
+
+# # duoshuo comment
+# duoshuo: false
+# duoshuo_name:
+
+# # disqus comment
+# disqus: true
+# disqus_shortname: derekely
+
+# # google analytics
+# googleTrackId:
+

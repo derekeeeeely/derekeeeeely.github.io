@@ -1,9 +1,11 @@
 ---
-title: ES6读书笔记-基础篇
+title: ES6读书小笔记-1
 tags:
   - es6
   - javaScript
-categories: note
+categories:
+  - code
+  - note
 abbrlink: 631da001
 date: 2017-10-31 02:17:11
 ---

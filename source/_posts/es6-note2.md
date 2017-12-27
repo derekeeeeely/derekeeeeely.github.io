@@ -1,9 +1,11 @@
 ---
-title: ES6读书笔记-变化篇之SSM-PRI
+title: ES6读书小笔记-2
 tags:
   - es6
   - javaScript
-categories: note
+categories:
+  - code
+  - note
 abbrlink: d82f038a
 date: 2017-11-06 14:12:52
 ---

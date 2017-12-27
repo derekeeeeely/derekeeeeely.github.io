@@ -1,7 +1,9 @@
 ---
-title: 走近dubbo学习笔记
+title: 走近dubbo小笔记
 tags: rpc
-categories: note
+categories:
+  - code
+  - note
 abbrlink: 773e5c14
 date: 2017-11-21 22:08:50
 ---

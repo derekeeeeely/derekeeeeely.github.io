@@ -1,5 +1,5 @@
 ---
-title: react
+title: React小笔记
 tags:
   - react
   - source code
@@ -55,6 +55,7 @@ date: 2017-12-26 13:22:43
   }
   ```
   see element's look
+
   ![](http://opo02jcsr.bkt.clouddn.com/1e476f98b0e1db760c4eb99c75a6bc9c.png)
 
   > question: how we jump to render ? debug shows ReactPerf.measure called it, but how we get into measure ?
@@ -66,6 +67,7 @@ date: 2017-12-26 13:22:43
     return ReactMount._renderSubtreeIntoContainer(null, nextElement, container, callback);
   }
   ```
+
   ```js
   _renderSubtreeIntoContainer: function (parentComponent, nextElement, container, callback) {
     'some validation'
@@ -75,8 +77,8 @@ date: 2017-12-26 13:22:43
     ...cause we get only one node here, we'll mention these details later
   }
   ```
-  > question: why wapper ?
-    to distinguish between ReactCompositeComponent/ReactNativeComponent/ReactEmptyComponent ?
+  > question: why wrap ?
+    to distinguish between ReactCompositeComponent/ReactNativeComponent/ReactDOMComponent ?
 
 
   ![](http://opo02jcsr.bkt.clouddn.com/c2196a14908262f98d90f91789fa066c.png)
@@ -86,8 +88,10 @@ date: 2017-12-26 13:22:43
 
     _renderNewRootComponent: function (nextElement, container, shouldReuseMarkup, context) {
       'check container node type'
+
       // Listens to window scroll and resize events. We cache scroll values so that application code can access them without triggering reflows.
       ReactBrowserEventEmitter.ensureScrollValueMonitoring();
+
       // Given a ReactNode, create an instance that will actually be mounted.
       var componentInstance = instantiateReactComponent(nextElement);
 
@@ -103,7 +107,9 @@ date: 2017-12-26 13:22:43
     };
 
   ```
+
   instance may be this
+
   ![](http://opo02jcsr.bkt.clouddn.com/aaf009ed7c2590e24c412210a0f614b7.png)
 
 
@@ -151,7 +157,9 @@ date: 2017-12-26 13:22:43
       transaction.perform(mountComponentIntoNode, null, componentInstance, container, transaction, shouldReuseMarkup, context);
     }
   ```
+
   here is the transaction:
+
   ![](http://opo02jcsr.bkt.clouddn.com/4ce81da62d2ed9d2c10f2c9531f236dc.png)
 
   ```js
@@ -179,8 +187,63 @@ date: 2017-12-26 13:22:43
     }
 
   ```
+
   ReactDOMContainerInfo is here:
+
   ![](http://opo02jcsr.bkt.clouddn.com/36913673cf38732f647db1065385f898.png)
 
   markup is here:
 
+  ![](http://opo02jcsr.bkt.clouddn.com/6bac0665c898e51e6144cef8a50a351f.png)
+
+- somebody says
+
+  ![](http://opo02jcsr.bkt.clouddn.com/0069274d07a5cb77ad10c284304c7896.jpg)
+
+  my call stack
+
+  ![](http://opo02jcsr.bkt.clouddn.com/32b2d1f0d28e6521735665a2cf90bb18.png)
+
+- nested
+
+  ```js
+    class Demo extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {name: 'John'};
+      }
+
+      render() {
+        return (
+          <h1>
+            Hello, {this.state.name}!
+          </h1>
+        )
+      }
+
+      componentDidMount() {
+        this.setState({
+          name: 'Jack'
+        })
+      }
+    }
+
+    ReactDOM.render(
+      <Demo />,
+      document.getElementById('example')
+    );
+  ```
+  render的时候demo作为type存入elementTree
+  element => componentInstance的时候调batchupdate，开启事务，do sth like add listener...
+  回调batchedMountComponentIntoNode，开启事务
+  ReactReconciler.mountComponent => ReactCompositeComponentMixin.mountComponent, process props/context
+  performInitialMount => _processChildContext 处理child
+  Demo.render => 重复以上
+  mountImageIntoNode => dom => done
+
+  ![](http://opo02jcsr.bkt.clouddn.com/4dfe91e0bfd1db022b2d569bb56fb975.png)
+
+
+
+- 综上，简直乱七八糟，不清不楚...还是看看别人总结的...
+  参考 https://github.com/numbbbbb/read-react-source-code/blob/master/02-how-render-works.md

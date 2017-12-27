@@ -3,7 +3,9 @@ title: Hexo快速搭建博客
 abbrlink: d76cea4a
 date: 2017-10-25 19:01:33
 tags: [hexo, blog]
-categories: code
+categories:
+  - code
+  - note
 top: 100
 ---
 

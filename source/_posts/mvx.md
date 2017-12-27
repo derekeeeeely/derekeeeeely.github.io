@@ -1,5 +1,5 @@
 ---
-title: mvx
+title: MV*浅析
 tags:
   - mv*
   - backbone

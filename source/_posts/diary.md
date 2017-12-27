@@ -1,7 +1,9 @@
 ---
-title: diary
-tags: diary
-categories: diary
+title: Code小笔记
+tags: [react, node, javaScript, typeScript]
+categories:
+  - code
+  - note
 abbrlink: 917bede2
 date: 2017-11-23 19:33:31
 ---
@@ -12,6 +14,50 @@ date: 2017-11-23 19:33:31
 ## 渣渣前端学习笔记
 
 ### React
+
+#### render
+
+  ```js
+  // element
+  ReactMount.render(nextElement, container, callback) => {
+
+    ReactMount._renderSubtreeIntoContainer(parentComponent, nextElement, container, callback) => {
+
+      // wrappered element
+      var nextWrappedElement = ReactElement(TopLevelWrapper, null, null, null, null, null, nextElement) => {
+
+        _renderNewRootComponent(nextWrappedElement, container, shouldReuseMarkup, nextContext) => {
+
+          // element => componentInstance
+          var componentInstance = instantiateReactComponent(nextElement)
+
+          // batch update strategy => transaction
+          ReactUpdates.batchedUpdates(batchedMountComponentIntoNode, componentInstance, container, shouldReuseMarkup, context) => {
+
+            // run callback => insert into dom node
+            batchedMountComponentIntoNode() => {
+
+              transaction.perform(mountComponentIntoNode, null, componentInstance, container, transaction, shouldReuseMarkup, context) => {
+
+                mountComponentIntoNode(wrapperInstance, container, transaction, shouldReuseMarkup, context) => {
+
+                  // mount componentInstance to dom node
+                  internalInstance.mountComponent(transaction, hostParent, hostContainerInfo, context) => {
+
+                      ReactMount._mountImageIntoNode(markup, container, wrapperInstance, shouldReuseMarkup, transaction);
+                  }
+
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+  ```
+
 
 #### setState
 
