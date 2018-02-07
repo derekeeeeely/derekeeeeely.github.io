@@ -1,16 +1,12 @@
 ---
-title: ES6小笔记-3
-tags:
-  - es6
-  - javaScript
-categories:
-  - code
-  - note
-abbrlink: 93cdd49
+title: js-es6 异步篇
+abbrlink: 7819203f
 date: 2017-11-07 13:41:34
+tags: js
+categories: code
 ---
 
-&emsp;&emsp;承上一篇，本文记录了es6的Promise对象、Generator函数和async await语法糖，异步真是让人又爱又恨
+&emsp;&emsp;承上一篇，本文记录了es6的Promise对象、Generator函数和async await语法糖，异步真是让人又爱又恨。
 <!-- more -->
 
 ## lesson1 Promise

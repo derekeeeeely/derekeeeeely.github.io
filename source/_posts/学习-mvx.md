@@ -1,18 +1,12 @@
 ---
-title: MV*浅析
-tags:
-  - mv*
-  - backbone
-  - vue
-  - react
-categories:
-  - code
-  - note
-abbrlink: 98f5a61f
+title: mvx 从todo mvc说起
+abbrlink: c4697232
 date: 2017-12-18 16:17:17
+tags: mvx
+categories: code
 ---
 
-&emsp;&emsp;在git上看到一个[to do mvc](https://github.com/tastejs/todomvc)的repo，一时有了兴致，记录下一些点
+&emsp;&emsp;在git上看到一个[to do mvc](https://github.com/tastejs/todomvc)的repo，一时有了兴致，记录下一些点。
 <!-- more -->
 
 ### 历史

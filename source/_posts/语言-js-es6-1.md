@@ -1,16 +1,12 @@
 ---
-title: ES6小笔记-1
-tags:
-  - es6
-  - javaScript
-categories:
-  - code
-  - note
-abbrlink: 631da001
+title: js-es6 基础篇
+abbrlink: '96174113'
 date: 2017-10-31 02:17:11
+tags: js
+categories: code
 ---
 
-&emsp;&emsp;大佬们es7, es8写得嗨皮的时候，我却还在es6学习...本文为阅读阮一峰老师的系列文章记下的es6基础篇笔记
+&emsp;&emsp;大佬们es7, es8写得嗨皮的时候，我却还在es6学习...本文为阅读阮一峰老师的系列文章记下的es6基础篇笔记。
 <!-- more -->
 
 ## lesson1 introduce

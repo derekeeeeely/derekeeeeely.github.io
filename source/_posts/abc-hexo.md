@@ -2,14 +2,12 @@
 title: Hexo快速搭建博客
 abbrlink: d76cea4a
 date: 2017-10-25 19:01:33
-tags: [hexo, blog]
-categories:
-  - code
-  - note
+tags: hexo
+categories: code
 top: 100
 ---
 
-&emsp;&emsp;利用一天时间搭一个简单漂亮的静态博客，平时记记笔记、写写文章，日积月累，收获会让你意想不到
+&emsp;利用一天时间搭一个简单漂亮的静态博客，平时记记笔记、写写文章，日积月累，收获也许会让你意想不到。
 <!-- more -->
 
 ## 前言
@@ -33,8 +31,6 @@ top: 100
 - 你在你的Github上建了一个 your_user_name.github.io 的 repo
 
 ### 安装
-
-&emsp;这里使用cnpm主要是为了方便和公司的源做区分，倒不是因为淘宝源快，换成npm没影响的
 
 ```bash
 # 全局安装hexo

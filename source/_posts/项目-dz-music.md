@@ -1,11 +1,9 @@
 ---
-title: dz-music项目总结
-tags:
-  - react
-  - mobx
-  - parcel
-abbrlink: 52ea43e5
+title: dz-pj 在线音乐SPA
+abbrlink: f0693436
 date: 2018-01-19 13:04:54
+tags: [react]
+categories: projects
 ---
 
 &emsp;&emsp;一时兴起，写了个简单的音乐站，满足自己平时听歌的需要。欢迎朋友们试用、提[issue](https://github.com/derekeeeeely/dz-music/issues)、[star](https://github.com/derekeeeeely/dz-music)~

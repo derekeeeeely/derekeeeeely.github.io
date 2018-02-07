@@ -1,16 +1,12 @@
 ---
-title: ES6小笔记-2
-tags:
-  - es6
-  - javaScript
-categories:
-  - code
-  - note
-abbrlink: d82f038a
+title: js-es6 新特性篇
+abbrlink: f1e10a9
 date: 2017-11-06 14:12:52
+tags: js
+categories: code
 ---
 
-&emsp;&emsp;承上一篇，本笔记包含es6的一些新东西，如Reflect，Proxy，Iterator，Symbol等
+&emsp;&emsp;承上一篇，本笔记包含es6的一些新东西，如Reflect，Proxy，Iterator，Symbol等。
 <!-- more -->
 
 ## lesson1 Symbol

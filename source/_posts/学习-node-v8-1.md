@@ -1,22 +1,23 @@
 ---
-title: node/V8小笔记-1
-abbrlink: '33612064'
+title: node-v8 Isolate和GC
+abbrlink: 5f9de541
 date: 2018-01-06 15:51:30
-tags:
+tags: [node, v8]
+categories: code
 ---
 
-&emsp;&emsp;Node/V8学习笔记系列1，关于Isolate（V8实例）和GC（垃圾回收机制）
+&emsp;&emsp;Node/V8学习笔记系列1，关于Isolate（V8实例）和GC（垃圾回收机制）。
 
 <!-- more -->
 
-## JavaScript引擎
+### JavaScript引擎
   ![](http://opo02jcsr.bkt.clouddn.com/7b6d799a60dcdda8f8321e54d4cd65db.png)
 
   js引擎：源代码->抽象语法树AST->字节码->JIT->本地代码
   V8：AST->JIT->本地代码
 
-## V8
-### Isolate
+### V8
+#### Isolate
 &emsp;&emsp;V8引擎实例，是一个独立的虚拟机，对应一个或多个线程，但同时只允许一个线程进入。Isolate之间完全隔离，不共享任何资源。
 
   ![](http://opo02jcsr.bkt.clouddn.com/c5e9cafc6bd2eb777027f92b22eed647.png)
@@ -34,7 +35,7 @@ tags:
   &emsp;&emsp;上下文环境，也可以理解为运行环境。
   &emsp;&emsp;例如：在A函数内有一个Context，调用B函数，又有一个Context，退出B回到A时又恢复了A的Context。
 
-### GC
+#### GC
 &emsp;&emsp;基本问题：识别需要回收的内存。
 &emsp;&emsp;根对象或者被另一个活跃对象引用的对象是活跃的。
 

@@ -1,17 +1,15 @@
 ---
-title: Dubbo小笔记
-tags: rpc
-categories:
-  - code
-  - note
-abbrlink: 773e5c14
+title: dubbo-rpc 初探rpc
+abbrlink: c48da636
 date: 2017-11-21 22:08:50
+tags: [rpc, dubbo]
+categories: code
 ---
 
-&emsp;&emsp;抱着学习理解dubbo的心思，从各方大佬身上取经，记下学习笔记，方便自己，服务志同道合的小伙伴们
+&emsp;&emsp;抱着学习理解dubbo的心思，从各方大佬身上取经，记下学习笔记，方便自己，服务志同道合的小伙伴们。
 <!-- more -->
 
-### Chapter1 RPC
+### RPC
 
 #### 远程过程调用协议（Remote Procedure Call Protocol）
 
