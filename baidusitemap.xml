@@ -27,19 +27,19 @@
 
     
   <url>
-    <loc>http://derekz.cn/posts/815e4034/</loc>
+    <loc>http://derekz.cn/posts/7819203f/</loc>
     <lastmod>2018-06-06T04:05:37.987Z</lastmod>
     <data>
         <display>
-        <title>dz's 2017那些事</title>
-        <pubTime>2018-01-01T13:03:40.000Z</pubTime>
+        <title>js-es6 异步篇</title>
+        <pubTime>2017-11-07T05:41:34.000Z</pubTime>
         
-        <tag>thinking</tag>
+        <tag>js</tag>
          
          
            
              
-              <breadCrumb title="life" url="http://derekz.cn/categories/life/"/>
+              <breadCrumb title="code" url="http://derekz.cn/categories/code/"/>
           
         </display>
     </data>
@@ -67,26 +67,6 @@
 
     
   <url>
-    <loc>http://derekz.cn/posts/7819203f/</loc>
-    <lastmod>2018-06-06T04:05:37.987Z</lastmod>
-    <data>
-        <display>
-        <title>js-es6 异步篇</title>
-        <pubTime>2017-11-07T05:41:34.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-         
-           
-             
-              <breadCrumb title="code" url="http://derekz.cn/categories/code/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://derekz.cn/posts/2082e7b0/</loc>
     <lastmod>2018-06-06T04:05:37.987Z</lastmod>
     <data>
@@ -95,6 +75,26 @@
         <pubTime>2017-12-13T17:34:59.000Z</pubTime>
         
         <tag>摄影</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://derekz.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://derekz.cn/posts/815e4034/</loc>
+    <lastmod>2018-06-06T04:05:37.987Z</lastmod>
+    <data>
+        <display>
+        <title>dz's 2017那些事</title>
+        <pubTime>2018-01-01T13:03:40.000Z</pubTime>
+        
+        <tag>thinking</tag>
          
          
            
